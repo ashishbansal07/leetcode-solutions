@@ -24,10 +24,8 @@ var solution = function(isBadVersion) {
         
         while (start <= end) {
             let mid = Math.floor(start + (end-start)/2);
-            
-            let ifBad = isBadVersion(mid);
-            
-            if(ifBad) {
+                        
+            if(isBadVersion(mid)) {
                 badVersion = mid;
                 end = mid-1;
             } else {
