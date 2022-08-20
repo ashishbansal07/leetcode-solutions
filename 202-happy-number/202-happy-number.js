@@ -22,6 +22,10 @@ var isHappy = function(n) {
             tempSum += Math.pow(parseInt(nums[i]),2);
         }
         
+        if(tempSum === 1) {
+            return true;
+        }
+        
         n = tempSum;
     }
     
