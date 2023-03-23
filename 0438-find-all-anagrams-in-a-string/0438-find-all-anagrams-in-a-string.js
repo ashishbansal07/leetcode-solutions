@@ -11,15 +11,15 @@ var findAnagrams = function(s, p) {
     }
     
     let isAnagram = function(string1, string2) {
-        let count1 = new Array(256).fill(0);
-        let count2 = new Array(256).fill(0);
+        let count1 = new Array(26).fill(0);
+        let count2 = new Array(26).fill(0);
         
         for(let i=0;i<string1.length;i++) {
-            count1[string1[i].charCodeAt(0)]++;
-            count2[string2[i].charCodeAt(0)]++;
+            count1[string1[i].charCodeAt(0)-97]++;
+            count2[string2[i].charCodeAt(0)-97]++;
         }
         
-        for(let i=0;i < 256; i++) {
+        for(let i=0;i < 26; i++) {
             if(count1[i] != count2[i]) {
                 return false;
             }
