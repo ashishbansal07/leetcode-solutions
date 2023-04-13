@@ -6,7 +6,10 @@ var firstMissingPositive = function(nums) {
     let map = new Map();
     
     for(let i=0;i<nums.length;i++) {
-        map.set(nums[i], i);
+        let current = nums[i];
+        if(current > 0){
+            map.set(current, i);
+        }
     }
     
     for(let i=1;i<=nums.length; i++) {
