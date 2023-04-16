@@ -1,7 +1,6 @@
 Array.prototype.last = function() {
-    let arr = this;
-    if(arr.length) {
-        return arr[arr.length-1];
+    if(this.length) {
+        return this[this.length-1];
     }else {
         return -1;
     }
