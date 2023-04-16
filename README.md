@@ -18,4 +18,4 @@ Language used is primarily javascript
 3. You'll find a series of folders.
    Each folder contains a different problem with the problem statement and propoesed solution
    
-You can also [follow me on twitter](https://twitter.com/curiouslad07), or [connect with me on linkedin] (https://www.linkedin.com/in/curiouslad/).
+You can also [follow me on twitter](https://twitter.com/curiouslad07), or [connect with me on linkedin](https://www.linkedin.com/in/curiouslad/).
