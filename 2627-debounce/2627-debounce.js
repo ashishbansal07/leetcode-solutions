@@ -6,10 +6,8 @@
 var debounce = function(fn, t) {
     let timer = null;
     return function(...args) {
-        if(timer){
-            clearTimeout(timer);
-        }
-        timer = setTimeout(fn.bind(undefined, ...args), t);
+        clearTimeout(timer);
+        timer = setTimeout(fn.bind(this, ...args), t);
     }
 };
 
